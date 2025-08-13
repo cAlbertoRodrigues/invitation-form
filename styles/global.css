@@ -8,6 +8,12 @@ body {
     background-color: var(--shape-background);
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 :root {
 
     /*  Brand  */

@@ -3,11 +3,10 @@
     grid-template-columns: 26.88% 73.12%;
 
     height: 100vh;
-    overflow: hidden;
 }
 
 aside {
-    margin: 32px;
+    
     background: url(../assets/Background.png);
     background-size: cover;
     background-position: center;
@@ -15,6 +14,7 @@ aside {
 
     border-radius: 12px;
     padding: 32px;
+    margin: 32px;
     
     & h1 {
             font: var(--logo);
@@ -31,4 +31,32 @@ aside {
         padding-top: 16px;
         gap: 12px;
     }
+}
+
+main {
+    
+    background-color: var(--shape-body);
+
+    border-radius: 12px;
+    margin: 32px 32px 32px 0px;
+    gap: 48px;
+
+    & h1 {
+            font: var(--heading-md);
+            color: var(--text-heading);
+            padding-bottom: 40px;
+        }
+
+        & div {
+            margin-bottom: 24px;
+
+
+        & span {
+           font: var(--heading-sm);
+           color: var(--text-heading);
+           
+        }
+
+    }
+ 
 }
