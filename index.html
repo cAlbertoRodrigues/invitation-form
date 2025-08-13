@@ -19,6 +19,193 @@
                 <h2>Crie um convite digital para seu evento</h2>
             </div>
         </aside>
+
+        <main>
+            <h1>Crie seu convite</h1>
+            <div class="container">
+                <img src="assets/icons/calendar.svg" alt="">
+                <span>Sobre o evento</span>
+            </div>
+            <form method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <div>
+                    <label for="title">Título</label>
+                    <input type="text" placeholder="Nome do evento">
+                    </div>
+                    <div>
+                        <label for="title">Inicio</label>
+                        <input type="date" name="inicio" id="inicio">
+                        <label for="title">Fim</label>
+                        <input type="date" name="fim" id="fim">
+                    </div>
+                    <div>
+                        <span>Tipo</span>
+                            <div class="radio-group">
+                                <input type="radio" id="presencial" name="tipo" checked>
+                                <label for="presencial">
+                                   Presencial
+                                </label>
+
+                                <input type="radio" id="online" name="tipo">
+                                <label for="online">
+                                    Online
+                                </label>
+                            </div>
+                    <div>
+                        <label for="title">Descrição</label>
+                        <input type="text" placeholder="Escreva sobre os detalhes do evento">
+                    </div>
+                </fieldset>
+
+                <div class="container">
+                        <img src="assets/icons/paintbrush.svg" alt="">
+                        <span>Personalização</span>
+                        </div>
+
+                <fieldset>
+
+                    <div class="color-btn">
+
+                        <div>
+                            <input type="radio" name="primary" id="c1" value="#60a5fa" checked>
+                            <label for="c1" style="--swatch:#60a5fa" aria-label="Azul claro"></label>
+
+                            <input type="radio" name="primary" id="c2" value="#6366f1">
+                            <label for="c2" style="--swatch:#6366f1" aria-label="Índigo"></label>
+
+                            <input type="radio" name="primary" id="c3" value="#a855f7">
+                            <label for="c3" style="--swatch:#a855f7" aria-label="Roxo"></label>
+
+                            <input type="radio" name="primary" id="c4" value="#ec4899">
+                            <label for="c4" style="--swatch:#ec4899" aria-label="Magenta"></label>
+
+                            <input type="radio" name="primary" id="c5" value="#f43f5e">
+                            <label for="c5" style="--swatch:#f43f5e" aria-label="Vermelho"></label>
+
+                            <input type="radio" name="primary" id="c6" value="#f97316">
+                            <label for="c6" style="--swatch:#f97316" aria-label="Laranja"></label>
+
+                            <input type="radio" name="primary" id="c7" value="#fbbf24">
+                            <label for="c7" style="--swatch:#fbbf24" aria-label="Amarelo"></label>
+
+                            <input type="radio" name="primary" id="c8" value="#a3e635">
+                            <label for="c8" style="--swatch:#a3e635" aria-label="Lima"></label>
+
+                            <input type="radio" name="primary" id="c9" value="#34d399">
+                            <label for="c9" style="--swatch:#34d399" aria-label="Verde"></label>
+
+                            <input type="radio" name="primary" id="c10" value="#22d3ee">
+                            <label for="c10" style="--swatch:#22d3ee" aria-label="Ciano"></label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3>tema do evento</h3>
+
+                        <div>
+                            <img src="assets/images/card-01.png" alt="">
+                            <span>Aniversário</span>
+                        </div>
+                        <div>
+                            <img src="assets/images/card-01.png" alt="">
+                            <span>Aniversário</span>
+                        </div>
+                        <div>
+                            <img src="assets/images/card-02.png" alt="">
+                            <span>Infantil</span>
+                        </div>
+                        <div>
+                            <img src="assets/images/card-03.png" alt="">
+                            <span>Formatura</span>
+                        </div>
+                        <div>
+                            <img src="assets/images/card-04.png" alt="">
+                            <span>Casamento</span>
+                        </div>
+                        <div>
+                            <img src="assets/images/card-05.png" alt="">
+                            <span>Chá de bebê</span>
+                        </div>
+                        <div>
+                            <img src="assets/images/card-06.png" alt="">
+                            <span>Carnaval</span>
+                        </div>
+                        <div>
+                            <img src="assets/images/card-07.png" alt="">
+                            <span>Páscoa</span>
+                        </div>
+                        <div>
+                            <img src="assets/images/card-08.png" alt="">
+                            <span>São João</span>
+                        </div>
+                        <div>
+                            <img src="assets/images/card-09.png" alt="">
+                            <span>Halloween</span>
+                        </div>
+                        <div>
+                            <img src="assets/images/card-10.png" alt="">
+                            <span>Natal</span>
+                        </div>
+                        <div>
+                            <img src="assets/images/card-11.png" alt="">
+                            <span>Outro</span>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div>
+                        <input type="radio" id="presencial" name="tipo" checked>
+                                <label for="presencial">
+                                   Escuro
+                                </label>
+
+                                <input type="radio" id="online" name="tipo">
+                                <label for="online">
+                                    Claro
+                                </label>
+                        </div>
+
+                        <div class="droparea-wrapper">
+
+                            <label for="file">Foto de capa</label>
+                            
+                            <div>
+                                <input type="file">
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+
+                    <span>Dados para contato</span>
+
+                    <div>
+                        <label>Nome</label>
+                        <input type="text" placeholder="Nome completo">
+                    </div>
+                    <div>
+                        <label>E-mail</label>
+                        <input type="email" placeholder="exemplo@email.com">
+
+                        <label>Telefone</label>
+                        <input type="number" placeholder="(99) 99999-9999">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <input type="radio">
+                    <label>Li e concordo com os Termos e Condições e com a Política de Privacidade</label>
+                    <input type="radio">
+                    <label>Aceito receber atualizações e promoções por e-mail</label>
+                    <input type="radio">
+                    <label>Aceito receber atualizações e promoções por SMS</label>
+
+                    <button>Gerar convite</button>
+                </fieldset>
+            </form>
+            
+        </main>
     </div>
 </body>
 </html>
