@@ -19,43 +19,63 @@
                 <h2>Crie um convite digital para seu evento</h2>
             </div>
         </aside>
-
-        <main>
-            <h1>Crie seu convite</h1>
-            <div class="container">
-                <img src="assets/icons/calendar.svg" alt="">
-                <span>Sobre o evento</span>
-            </div>
+ 
+        <main class="scroll">
+            <h1 class="margin-bottom-40">Crie seu convite</h1>
             <form method="post" enctype="multipart/form-data">
-                <fieldset>
-                    <div>
-                    <label for="title">Título</label>
-                    <input type="text" placeholder="Nome do evento">
-                    </div>
-                    <div>
-                        <label for="title">Inicio</label>
-                        <input type="date" name="inicio" id="inicio">
-                        <label for="title">Fim</label>
-                        <input type="date" name="fim" id="fim">
-                    </div>
-                    <div>
-                        <span>Tipo</span>
-                            <div class="radio-group">
-                                <input type="radio" id="presencial" name="tipo" checked>
-                                <label for="presencial">
-                                   Presencial
-                                </label>
+                <section>
 
-                                <input type="radio" id="online" name="tipo">
-                                <label for="online">
-                                    Online
-                                </label>
-                            </div>
-                    <div>
-                        <label for="title">Descrição</label>
-                        <input type="text" placeholder="Escreva sobre os detalhes do evento">
+                    <div class="field">
+                        <label for="titulo">Título</label>
+                        <input id="titulo" type="text" placeholder="Nome do evento">
+                     </div>
+
+  
+                    <div class="row-2">
+                        <div class="field">
+                        <label for="inicio">Início</label>
+                        <input id="inicio" type="datetime-local" placeholder="DD/MM/AAAA, --:--">
+                     </div>
+
+                        <div class="field">
+                        <label for="fim">Fim</label>
+                        <input id="fim" type="datetime-local" placeholder="DD/MM/AAAA, --:--">
+                        </div>
                     </div>
-                </fieldset>
+
+  
+                    <div class="row-2">
+                        <div class="field">
+                        <label>Tipo</label>
+                        <div class="toggle-container control">
+                            <input type="radio" id="presencial" name="tipo" checked>
+                            <label for="presencial">
+                                            <img src="assets/icons/building.svg" alt="" class="icon-default">
+                            <img src="assets/icons/building-hover.svg" alt="" class="icon-active">
+                            Presencial
+                            </label>
+
+                            <input type="radio" id="online" name="tipo">
+                            <label for="online">
+                            <img src="assets/icons/video.svg" alt="" class="icon-default">
+                            <img src="assets/icons/video-hover.svg" alt="" class="icon-active">
+                                Online
+                            </label>
+                        </div>
+                        </div>
+
+                        <div class="field">
+                        <label for="local">Local</label>
+                        <input id="local" type="text" placeholder="Link ou endereço">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="desc">Descrição</label>
+                        <input id="desc" type="text" placeholder="Escreva sobre os detalhes do evento">
+   
+                    </div>
+                </section>
 
                 <div class="container">
                         <img src="assets/icons/paintbrush.svg" alt="">
@@ -202,6 +222,8 @@
                     <label>Aceito receber atualizações e promoções por SMS</label>
 
                     <button>Gerar convite</button>
+
+                    
                 </fieldset>
             </form>
             
@@ -209,3 +231,4 @@
     </div>
 </body>
 </html>
+

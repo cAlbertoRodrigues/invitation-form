@@ -1,0 +1,92 @@
+input {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 365px;
+    height: 48px;
+    padding: 12px;
+
+    background: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+
+}
+
+input::placeholder {
+        font: var(--body-md);
+        display: flex;
+    }
+
+input:focus {
+    border: 1px solid var(--brand-light);
+    outline: none;
+}
+
+.icon-active { display: none; }
+
+.icon-default { display: inline; }
+
+.toggle-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px;
+  gap: 4px;
+  isolation: isolate;
+
+  width: 272px;
+  height: 48px;
+
+  background: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 8px;
+
+    & label {
+        flex: 1;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        background: transparent;
+        font: var(--text-heading);
+        color: var(--text-body);
+}
+
+    & input[type="radio"] {
+        display: none;
+  
+}
+
+    & input[type="radio"]:checked + label .icon-active {
+        display: inline;
+}
+
+    & input[type="radio"]:checked + label .icon-default {
+        display: none;
+}
+
+    & input[type="radio"]:checked + label {
+  background: var(--shape-button);
+  
+}
+
+    & img {
+        width: 16px;
+        height: 16px;
+  }
+
+}

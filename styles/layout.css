@@ -39,24 +39,29 @@ main {
 
     border-radius: 12px;
     margin: 32px 32px 32px 0px;
+    padding: 64px;
     gap: 48px;
+    overflow: auto;
 
     & h1 {
-            font: var(--heading-md);
-            color: var(--text-heading);
-            padding-bottom: 40px;
-        }
-
-        & div {
-            margin-bottom: 24px;
-
-
-        & span {
-           font: var(--heading-sm);
-           color: var(--text-heading);
-           
-        }
-
+        font: var(--heading-md);
+        color: var(--text-heading);
     }
- 
+
+    & span {
+        font: var(--heading-sm);
+        color: var(--text-heading);
+    }
+
+}
+
+.scroll{
+    overflow: auto;    
+    -ms-overflow-style: none;     
+    scrollbar-width: none; 
+}
+
+.scroll::-webkit-scrollbar{
+  width: 0;               
+  background: transparent;
 }
