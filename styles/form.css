@@ -29,6 +29,16 @@ section {
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  & label {
+    font: var(--body-sm);
+    color: var(--text-body);
+  }
+
+  & placeholder {
+    font: var(--body-md);
+    color: var(--input-placeholder);
+  }
 }
 
 fieldset {

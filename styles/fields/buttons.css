@@ -1,3 +1,61 @@
-button {
-    color: var(--input-base);
+.color-btn {
+  position: relative;
+
+  & h3 {
+    font: var(--body-sm);
+    color: var(--text-heading);
+    margin-bottom: 16px;
+  }
+
+  & > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+    gap: 8px;                      
+    padding: 0;
+  }
+
+
+  & input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    margin: 0;
+    inline-size: 1px;
+    block-size: 1px;
+  }
+
+
+  & label {
+    inline-size: 40px;
+    block-size: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: var(--shape-background); 
+    border: 5px solid var(--shape-button); 
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    transition: transform .12s ease;
+  }
+
+  & input[type="radio"]:checked + label {
+    outline: 2px solid var(--brand-light);
+    outline-offset: 2px;
+  }
+  & input[type="radio"]:focus + label {
+    box-shadow: 0 0 0 2px var(--brand-light);
+  }
+  & label:hover { transform: scale(1.03); }
+
+
+  & #c1 + label { background: var(--purple); }
+  & #c2 + label { background: var(--fuschia); }
+  & #c3 + label { background: var(--pink); }
+  & #c4 + label { background: var(--orange); }
+  & #c5 + label { background: var(--yellow); }
+  & #c6 + label { background: var(--lime); }
+  & #c7 + label { background: var(--green); }
+  & #c8 + label { background: var(--cyan); }
+  & #c9 + label { background: var(--navy); }
 }
