@@ -20,10 +20,22 @@ body {
   gap: 16px;
 }
 
+.row-3 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+}
+
 .field {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.droparea-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .field input,

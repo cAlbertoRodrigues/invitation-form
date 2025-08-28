@@ -85,7 +85,7 @@
 
                 <fieldset>
 
-                    <div class="color-btn">
+                    <div class="color-selection">
                         <h3>Cor principal</h3>
                         <div>
                             <input type="radio" name="primary" id="c1" checked>
@@ -219,28 +219,30 @@
                     </div>
                     </div>
 
-                    <div>
-                        <div>
-                        <input type="radio" id="presencial" name="tipo" checked>
-                                <label for="presencial">
-                                   Escuro
-                                </label>
-
-                                <input type="radio" id="online" name="tipo">
-                                <label for="online">
-                                    Claro
-                                </label>
+                    <div class="row-3">
+                        <div class="field">
+                        <h3>Estilo</h3>
+                        <div class="switch">
+                            <input type="checkbox" id="tema">
+                            <label class="slider" for="tema"></label>
+                            <span class="state" aria-live="polite">
+                                <h3 class="off">Escuro</h3>
+                                <h3 class="on">Claro</h3>
+                            </span>
                         </div>
+                    </div>
 
+                    <div class="field">
+                        <h3>Foto de capa</h3>
                         <div class="droparea-wrapper">
-
-                            <label for="file">Foto de capa</label>
-                            
                             <div>
                                 <input type="file">
                             </div>
                         </div>
                     </div>
+
+                    </div>
+
                 </fieldset>
 
                 <fieldset>

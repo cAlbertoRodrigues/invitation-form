@@ -65,3 +65,11 @@ main {
   width: 0;               
   background: transparent;
 }
+
+fieldset {
+
+    & h3 {
+        font: var(--body-sm);
+        color: var(--text-heading);
+    }
+}
