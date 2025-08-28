@@ -72,7 +72,7 @@
 
                     <div class="field">
                         <label for="desc">Descrição</label>
-                        <input id="desc" type="text" placeholder="Escreva sobre os detalhes do evento">
+                        <textarea type="text" placeholder="Escreva sobre os detalhes do evento"></textarea>
    
                     </div>
                 </section>
@@ -117,59 +117,108 @@
                         </div>
                         </div>
 
-                    <div>
-                        <h3>tema do evento</h3>
+                    <div class="card-container">
+                        <h3>Tema do evento</h3>
 
-                        <div>
+                        <div class="cards-grid">
+                        <label class="cards">
+                            <input type="radio" name="tema" value="aniversario" checked>
+                            <div class="thumb">
                             <img src="assets/images/card-01.png" alt="">
-                            <span>Aniversário</span>
                         </div>
-                        <div>
-                            <img src="assets/images/card-01.png" alt="">
-                            <span>Aniversário</span>
-                        </div>
-                        <div>
+                        <span>Aniversário</span>
+                        </label>
+
+                        <label class="cards">
+                        <input type="radio" name="tema" value="infantil">
+                        <div class="thumb">
                             <img src="assets/images/card-02.png" alt="">
-                            <span>Infantil</span>
                         </div>
-                        <div>
-                            <img src="assets/images/card-03.png" alt="">
-                            <span>Formatura</span>
-                        </div>
-                        <div>
-                            <img src="assets/images/card-04.png" alt="">
-                            <span>Casamento</span>
-                        </div>
-                        <div>
-                            <img src="assets/images/card-05.png" alt="">
-                            <span>Chá de bebê</span>
-                        </div>
-                        <div>
-                            <img src="assets/images/card-06.png" alt="">
-                            <span>Carnaval</span>
-                        </div>
-                        <div>
-                            <img src="assets/images/card-07.png" alt="">
-                            <span>Páscoa</span>
-                        </div>
-                        <div>
-                            <img src="assets/images/card-08.png" alt="">
-                            <span>São João</span>
-                        </div>
-                        <div>
-                            <img src="assets/images/card-09.png" alt="">
-                            <span>Halloween</span>
-                        </div>
-                        <div>
-                            <img src="assets/images/card-10.png" alt="">
-                            <span>Natal</span>
-                        </div>
-                        <div>
-                            <img src="assets/images/card-11.png" alt="">
-                            <span>Outro</span>
-                        </div>
+                        <span>Infantil</span>
+                        </label>
 
+                        <label class="cards">
+                        <input type="radio" name="tema" value="formatura">
+                        <div class="thumb">
+                            <img src="assets/images/card-03.png" alt="">
+                        </div>
+                        <span>Formatura</span>
+                        </label>
+
+                        <label class="cards">
+                        <input type="radio" name="tema" value="casamento">
+                        <div class="thumb">
+                            <img src="assets/images/card-04.png" alt="">
+                        </div>
+                        <span>Casamento</span>
+                        </label>
+
+                        <label class="cards">
+                        <input type="radio" name="tema" value="cha-de-bebe">
+                        <div class="thumb">
+                            <img src="assets/images/card-05.png" alt="">
+                        </div>
+                        <span>Chá de bebê</span>
+                        </label>
+
+                        <label class="cards">
+                        <input type="radio" name="tema" value="cha-de-panela">
+                        <div class="thumb">
+                            <img src="assets/images/card-06.png" alt="">
+                        </div>
+                        <span>Chá de panela</span>
+                        </label>
+
+                        <label class="cards">
+                        <input type="radio" name="tema" value="carnaval">
+                        <div class="thumb">
+                            <img src="assets/images/card-07.png" alt="">
+                        </div>
+                        <span>Carnaval</span>
+                        </label>
+
+                        <label class="cards">
+                        <input type="radio" name="tema" value="pascoa">
+                        <div class="thumb">
+                            <img src="assets/images/card-08.png" alt="">
+                        </div>
+                        <span>Páscoa</span>
+                        </label>
+
+                        <label class="cards">
+                        <input type="radio" name="tema" value="sao-joao">
+                        <div class="thumb">
+                            <img src="assets/images/card-09.png" alt="">
+                        </div>
+                        <span>São João</span>
+                        </label>
+
+                        <label class="cards">
+                        <input type="radio" name="tema" value="halloween">
+                        <div class="thumb">
+                            <img src="assets/images/card-10.png" alt="">
+                        </div>
+                        <span>Halloween</span>
+                        </label>
+
+                        <label class="cards">
+                        <input type="radio" name="tema" value="natal">
+                        <div class="thumb">
+                            <img src="assets/images/card-11.png" alt="">
+                        </div>
+                        <span>Natal</span>
+                        </label>
+
+                        <label class="cards">
+                        <input type="radio" name="tema" value="outro">
+                        <div class="thumb">
+                            <img src="assets/images/card-12.png" alt="">
+                        </div>
+                        <span>Outro</span>
+                        </label>
                     </div>
+                    </div>
+
                     <div>
                         <div>
                         <input type="radio" id="presencial" name="tipo" checked>

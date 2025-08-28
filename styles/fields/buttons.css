@@ -40,13 +40,16 @@
   }
 
   & input[type="radio"]:checked + label {
-    outline: 2px solid var(--brand-light);
     outline-offset: 2px;
   }
   & input[type="radio"]:focus + label {
     box-shadow: 0 0 0 2px var(--brand-light);
   }
-  & label:hover { transform: scale(1.03); }
+  & label:hover { 
+    transform: scale(1.03);
+    border: 5px solid var(--shape-hover);
+  
+  }
 
 
   & #c1 + label { background: var(--purple); }

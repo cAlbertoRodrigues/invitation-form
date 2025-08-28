@@ -114,3 +114,25 @@ input[type="time"] {
     -moz-appearance: textfield;
 }
 
+textarea {
+    box-sizing: border-box;
+    display: block;
+
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+
+    background: var(--input-base);
+    border: 1px solid var(--input-stroke);
+    border-radius: 8px;
+
+    font: var(--body-md);
+    color: var(--text-body);
+
+    resize: none;
+
+    & ::placeholder {
+        font: var(--body-md);
+        color: var(--input-placeholder);
+    }
+}
