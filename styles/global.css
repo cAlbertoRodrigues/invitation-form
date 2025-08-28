@@ -32,12 +32,6 @@ body {
   gap: 8px;
 }
 
-.droparea-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
 .field input,
  textarea, 
  .control {
@@ -89,7 +83,7 @@ body {
     --text-body: #C8CDD0;
     --text-heading: #F9F9F9;
 
-    /*  Typography  */
+    /*  Typography  */ 
 
 
     /*  Leckerli One */

@@ -1,0 +1,57 @@
+.row-3 {
+  .field {
+    .dropzone {
+      & > div {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        min-width: 0;
+      }
+
+      & input[type="file"] {
+        all: unset;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        clip-path: inset(100%);
+        white-space: nowrap;
+      }
+
+      & .dz-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 14px;
+        background: var(--shape-button);
+        border-radius: 6px;
+        cursor: pointer;
+        font: var(--body-sm);
+        color: var(--text-heading);
+
+        & img { width: 16px; height: 16px; }
+        &:hover { background: var(--shape-hover); }
+      }
+
+      & .dz-placeholder,
+      & .dz-filename {
+        font: var(--body-sm);
+        color: var(--text-heading);
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 220px;
+        flex-shrink: 1;
+      }
+
+      & .dz-placeholder { display: block; }
+      & .dz-filename { display: none; }
+
+      & > div > input[type="file"]:valid ~ .dz-placeholder { display: none; }
+      & > div > input[type="file"]:valid ~ .dz-filename { display: block; }
+    }
+  }
+}
