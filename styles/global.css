@@ -38,6 +38,11 @@ body {
   width: 100%;
 }
 
+.divider {
+  border: none;
+  border-top: 1px solid var(--input-stroke, #444);
+  margin: 24px 0;
+}
 
 .margin-bottom-40 {
     margin-bottom: 40px;

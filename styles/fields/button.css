@@ -1,0 +1,31 @@
+.btn {
+    margin-top: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+
+  gap: 12px;
+  padding: 18px 32px;
+  border: 0;
+  border-radius: 24px;
+  background: var(--brand-dark);
+  font: var(--body-md);
+  color: var(--text-heading);
+
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+  white-space: nowrap;
+  transition: transform .06s ease, background-color .15s ease, box-shadow .15s ease;
+
+    &:hover {
+        background: var(--brand-mid);
+    }
+
+  & icon {
+    inline-size: 28px;
+    block-size: 28px;
+    display: inline-block;
+  }
+}

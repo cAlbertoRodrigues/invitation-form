@@ -62,3 +62,4 @@ input:checked + .slider::before {
   transform: translate(1.4em, -50%);
   background-color: var(--text-heading);
 }
+

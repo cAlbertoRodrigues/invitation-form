@@ -37,7 +37,7 @@
                         <input id="inicio" type="datetime-local">
                      </div>
 
-                        <div class="field">
+                    <div class="field">
                         <label for="fim">Fim</label>
                         <input id="fim" type="datetime-local">
                         </div>
@@ -253,33 +253,56 @@
 
                 <fieldset>
 
-                    <span>Dados para contato</span>
+                    <div class="container">
+                        <img src="assets/icons/contact.svg" alt="">
+                        <span>Dados para contato</span>
+                    </div>
 
-                    <div>
-                        <label>Nome</label>
+                    <div class="field">
+                        <h3>Nome</h3>
                         <input type="text" placeholder="Nome completo">
                     </div>
-                    <div>
-                        <label>E-mail</label>
-                        <input type="email" placeholder="exemplo@email.com">
 
-                        <label>Telefone</label>
+                    <div class="row-2">
+                        <div class="field">
+                        <h3>E-mail</h3>
+                        <input type="email" placeholder="exemplo@email.com">
+                    </div>
+
+                    <div class="field">
+                        <h3>Telefone</h3>
                         <input type="number" placeholder="(99) 99999-9999">
+                    </div>
                     </div>
                 </fieldset>
 
-                <fieldset>
-                    <input type="radio">
-                    <label>Li e concordo com os Termos e Condições e com a Política de Privacidade</label>
-                    <input type="radio">
-                    <label>Aceito receber atualizações e promoções por e-mail</label>
-                    <input type="radio">
-                    <label>Aceito receber atualizações e promoções por SMS</label>
+                <hr class="divider">
 
-                    <button>Gerar convite</button>
+                <fieldset class="consent">
+                    <label class="consent__item">
+                        <input class="checkbox" type="checkbox" checked>
+                        <h3>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></h3>
+                    </label>
 
-                    
+                    <label class="consent__item">
+                        <input class="checkbox" type="checkbox">
+                        <h3>Aceito receber atualizações e promoções por e-mail</h3>
+                    </label>
+
+                    <label class="consent__item">
+                        <input class="checkbox" type="checkbox">
+                        <h3>Aceito receber atualizações e promoções por SMS</h3>
+                    </label>
+
+                    <div class="consent__actions">
+                        <button class="btn">
+                            <img src="assets/icons/ticket.svg" alt="">
+                            Gerar convite
+                        </button>
+                    </div>
                 </fieldset>
+
+
             </form>
             
         </main>

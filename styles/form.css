@@ -52,3 +52,77 @@ fieldset {
 fieldset + fieldset {
     margin-top: 3rem;
 }
+
+fieldset.consent {
+  display: flex;
+  flex-direction: column;
+
+  > label.consent__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px;
+    font: var(--body-sm);
+    color: var(--text-heading);
+
+    * { color: inherit; }
+
+    a,
+    a:visited,
+    a:hover,
+    a:active,
+    a:focus {
+      color: var(--brand-light);
+      text-decoration: underline;
+    }
+
+    > input.checkbox {
+      order: 0;
+      margin: 0;
+      flex: 0 0 18px;
+      width: 18px;
+      height: 18px;
+      appearance: none;
+      -webkit-appearance: none;
+      border: 1px solid var(--input-stroke);
+      border-radius: 4px;
+      background: var(--input-base);
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 10px;
+        border-right: 2px solid var(--brand-light);
+        border-bottom: 2px solid var(--brand-light);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -58%) rotate(45deg);
+        opacity: 0;
+        transition: opacity .12s ease;
+      }
+
+      &:checked {
+        background: var(--input-background);
+        border-color: var(--brand-light);
+
+        &::after { opacity: 1; }
+      }
+    }
+
+    > span { order: 1; }
+  }
+  
+}
+  .consent__actions {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end; 
+    width: 100%;
+
+    & .btn {
+      display: inline-flex;
+    }
+  }
